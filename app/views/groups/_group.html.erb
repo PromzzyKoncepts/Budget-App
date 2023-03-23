@@ -1,22 +1,17 @@
-<div id="<%= dom_id group %>">
-  <p>
-    <strong>Name:</strong>
-    <%= group.name %>
-  </p>
+<div id="group">
+  <div class= "image-icon">
+    <img src=<%= group.icon %> class= "group-img">
+    <h3>
+      <%= group.name %>
+    </h3>
+  </div>
 
-  <p>
-    <strong>Icon:</strong>
-    <%= group.icon %>
-  </p>
 
-  <p>
-    <strong>User:</strong>
-    <%= group.user_id %>
-  </p>
-
-  <p>
-    <strong>Entity:</strong>
-    <%= group.entity_id %>
-  </p>
+  <div class="category-total-amount">
+    <Span>
+        $<%= group.operations.inject(0) { |sum, e| sum += e.amount  }%> 
+    </Span>
+  </div>
 
 </div>
+

@@ -1,0 +1,15 @@
+<div class= "new-operation-wrapper">
+  <h1>New operation</h1>
+
+  <%= render "form", operation: @operation %>
+
+  <br>
+<%
+=begin%>
+ 
+  <div>
+    <%= link_to "Back to operations", group_operations_path(@operations) %>
+  </div> 
+<%
+=end%>
+</div>
