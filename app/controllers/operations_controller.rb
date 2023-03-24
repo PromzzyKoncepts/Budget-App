@@ -2,13 +2,6 @@ class OperationsController < ApplicationController
   before_action :set_operation, only: %i[show edit update destroy new create]
   before_action :authenticate_user!
 
-
-  # GET /operations or /operations.json
-  # def index
-  #   @operations = Operation.all
-  #   @group = Group.find(params[:group_id])
-  # end
-
   def index
     @group = Group.find(params[:group_id])
     @operations = @group.operations.order(created_at: :desc)
@@ -40,7 +33,6 @@ class OperationsController < ApplicationController
         @operation.groups.push(@group) unless @group.nil?
       end
     end
-
 
     respond_to do |format|
       if @operation.save
