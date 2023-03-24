@@ -93,7 +93,7 @@ body {
   text-align: center;
 }
 
-.dropdown select{
+.dropdown select {
   width: 100%;
   outline: 0;
   padding: 8px 10px;
@@ -117,7 +117,7 @@ label {
   border-radius: 8px;
 }
 
-.submit input{
+.submit input {
   color: #f4f4f4;
   background-color: brown;
   padding: 8px 11px;
