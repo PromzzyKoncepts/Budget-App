@@ -1,9 +1,14 @@
 <div class="sessions-wrapper">  
   <div class= "header"> 
-    <h2>Log in</h2>
-    <%= image_tag "back.png", class:"back"%>
-    
+    <%= link_to root_path do %>
     <div>
+      <%= image_tag "back.png", class:"back"%>
+    </div>
+    <%end%>
+    <div><h2>Log in</h2></div>
+    <div></div>
+    
+  </div>
   <div class= "session-container">
 
     <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
