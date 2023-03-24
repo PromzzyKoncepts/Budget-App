@@ -1,13 +1,6 @@
 class OperationsController < ApplicationController
-  before_action :set_operation, only: %i[ show edit update destroy new create ]
+  before_action :set_operation, only: %i[show edit update destroy new create]
   before_action :authenticate_user!
-
-
-  # GET /operations or /operations.json
-  # def index
-  #   @operations = Operation.all
-  #   @group = Group.find(params[:group_id])
-  # end
 
   def index
     @group = Group.find(params[:group_id])
@@ -15,20 +8,17 @@ class OperationsController < ApplicationController
   end
 
   # GET /operations/1 or /operations/1.json
-  def show
-  end
+  def show; end
 
   # GET /operations/new
   def new
     @operation = Operation.new
     @operations = Operation.all
     @groups = Group.created_by_current_user(current_user)
-    
   end
 
   # GET /operations/1/edit
-  def edit
-  end
+  def edit; end
 
   # POST /operations or /operations.json
   # @group = Group.operations.find(params[:id])
@@ -44,10 +34,11 @@ class OperationsController < ApplicationController
       end
     end
 
-
     respond_to do |format|
       if @operation.save
-        format.html { redirect_to group_operations_url(@operation.groups.first.id), notice: "Transaction was successfully created." }
+        format.html do
+          redirect_to group_operations_url(@operation.groups.first.id), notice: 'Transaction was successfully created.'
+        end
         format.json { render :show, status: :created, location: @operation }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -60,7 +51,7 @@ class OperationsController < ApplicationController
   def update
     respond_to do |format|
       if @operation.update(operation_params)
-        format.html { redirect_to group_operations_url(@operation), notice: "Operation was successfully updated." }
+        format.html { redirect_to group_operations_url(@operation), notice: 'Operation was successfully updated.' }
         format.json { render :show, status: :ok, location: @operation }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -74,19 +65,22 @@ class OperationsController < ApplicationController
     @operation.destroy
 
     respond_to do |format|
-      format.html { redirect_to group_operations_url(@operation.groups.first.id), notice: "Transaction was successfully deleted." }
+      format.html do
+        redirect_to group_operations_url(@operation.groups.first.id), notice: 'Transaction was successfully deleted.'
+      end
       format.json { head :no_content }
     end
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_operation
-      # @group = groups.operations.find(params[:id])
-    end
 
-    # Only allow a list of trusted parameters through.
-    def operation_params
-      params.require(:operation).permit(:name, :amount, group_ids: [])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_operation
+    # @group = groups.operations.find(params[:id])
+  end
+
+  # Only allow a list of trusted parameters through.
+  def operation_params
+    params.require(:operation).permit(:name, :amount, group_ids: [])
+  end
 end

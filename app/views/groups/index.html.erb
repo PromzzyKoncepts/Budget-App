@@ -11,23 +11,25 @@
 <div id="groups">
   <%if @groups.any?%>
     <% @groups.each do |group| %>
-      <%= link_to group_operations_path(group), id: "group-container" do %>
-        <%= render group %>
-      <%end%>
-      <div class= "group-footers">
-        <div>
-          <small><%= group.timelapse%> ago</small>
-        </div>
-        <div class= "show-delete">
-          <%= link_to "View", group %>
-          <%= button_to "Delete", group, method: :delete, class: "delete" %>
-
-        </div>
-      </div>
+      <%if can? :manage, group%>
+          <%= link_to group_operations_path(group), id: "group-container" do %>
+            <%= render group %>
+          <%end%>
+          <div class= "group-footers">
+            <div>
+              <small><%= group.timelapse%> ago</small>
+            </div>
+            <div class= "show-delete">
+              <%= link_to "View", group %>
+              <%= button_to "Delete", group, method: :delete, class: "delete" %>
+            </div>
+          </div>
+      <% end %>
     <% end %>
   <%else%>
-    <p>You don't have any Categories yet, Add now</p>
+      <h3 style="text-align: center">Welcome! You have not added any Categories yet</h3>
   <%end%>
+
 </div>
 
 <div class= "new-group">
