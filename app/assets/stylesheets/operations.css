@@ -1,0 +1,44 @@
+.total-transactions {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.new-operation-wrapper {
+  background-color: #60b524;
+  width: 35%;
+  padding: 30px;
+  margin: 70px auto;
+  box-shadow: 0 0 5px #5a5a5a;
+  text-align: center;
+}
+
+.checkbox {
+  overflow-y: scroll;
+  height: 100px;
+  padding: 10px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+.inputs {
+  margin: 10px;
+  text-align: left;
+}
+
+.submit-btn input {
+  color: #f4f4f4;
+  background-color: brown;
+  padding: 8px 11px;
+  border-radius: 8px;
+  margin-top: 20px;
+  border: none;
+}
+
+.submit-btn input:active {
+  color: brown;
+  background-color: #f4f4f4;
+}
+
+.create-btn {
+  text-align: center;
+}

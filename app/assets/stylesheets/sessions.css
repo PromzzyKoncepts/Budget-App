@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
+
+body {
+  font-family: 'poppins', sans-serif;
+  background-color: #f3f3f3;
+}
+
+.session-container {
+  display: grid;
+  place-items: center;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px 0;
+  margin-top: 4%;
+}
+
+.header {
+  background-color: #3979c3;
+  height: 100px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header h2 {
+  color: #f4f4f4;
+}
+
+.back {
+  width: 30px;
+}
+
+.off {
+  width: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
+
+.back:active,
+.off:active {
+  filter: invert();
+}
+
+.field .input {
+  width: 50vw;
+  padding: 8px 10px;
+  margin-bottom: 10px;
+  border: none;
+  background-color: #f3f3f3;
+  outline: none;
+}
+
+.actions input {
+  color: #fff;
+  background-color: #3979c3;
+  padding: 8px 11px;
+  border: none;
+  border-radius: 8px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.shared-links {
+  color: #282828;
+  text-decoration: none;
+  margin-top: -10px;
+}
+
+.shared-links:hover {
+  color: #fff;
+  background-color: #3979c3;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.5s ease-in-out;
+}

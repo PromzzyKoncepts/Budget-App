@@ -1,0 +1,40 @@
+<div class= "form">
+  <%= form_with model: @operation, url: group_operations_path, method: :post do |form| %>
+    <% if operation.errors.any? %>
+      <div style="color: red">
+        <h2><%= pluralize(operation.errors.count, "error") %> prohibited this operation from being saved:</h2>
+
+        <ul>
+          <% operation.errors.each do |error| %>
+            <li><%= error.full_message %></li>
+          <% end %>
+        </ul>
+      </div>
+    <% end %>
+
+    <div class= "group-name">
+      <%= form.label :name, style: "display: block" %>
+      <%= form.text_field :name %>
+    </div>
+
+    <div class= "group-name">
+      <%= form.label :amount, style: "display: block" %>
+      <%= form.number_field :amount %>
+    </div>
+    <p>Select category to add new transaction</p>
+    <div class= "checkbox">
+      <%if @groups%>
+          <%= form.label :groups %>
+          <%= form.collection_check_boxes(:group_ids, @groups, :id, :name) do |b| %>
+              <div class="inputs">
+              <%= b.check_box + b.label %>
+              </div>
+          <% end %>
+      <%end%>
+    </div>
+
+    <div class="submit-btn">
+      <%= form.submit %>
+    </div>
+  <% end %>
+</div>
