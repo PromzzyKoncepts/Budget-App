@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-    describe 'validations' do
+  describe 'validations' do
     before(:each) do
       @user = User.create(name: 'John', email: '123@gmail.com', password: '123456')
       @user1 = User.create(name: nil, email: '123@gmail.com', password: '123456')

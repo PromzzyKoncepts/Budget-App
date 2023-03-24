@@ -3,8 +3,9 @@ require 'rails_helper'
 RSpec.describe Operation, type: :model do
   before(:each) do
     @user = User.create(name: 'User', email: '123@gmail.com', password: '123456', password_confirmation: '123456')
-    @group = Group.create(name: 'Food', icon: 'https://www.sliderrevolution.com/wp-content/uploads/2020/02/srlogo.png', user: @user)
-    @operation = Operation.create(name: "Veggies", amount: 50, author_id: @user.id)
+    @group = Group.create(name: 'Food', icon: 'https://www.sliderrevolution.com/wp-content/uploads/2020/02/srlogo.png',
+                          user: @user)
+    @operation = Operation.create(name: 'Veggies', amount: 50, author_id: @user.id)
   end
 
   describe 'validations' do

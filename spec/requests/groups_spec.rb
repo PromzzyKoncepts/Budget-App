@@ -25,7 +25,8 @@ RSpec.describe '/groups', type: :request do
 
   before :each do
     @user = User.create(name: 'User', email: '123@gmail.com', password: '123456', password_confirmation: '123456')
-    @group = Group.create(name: 'Food', icon: 'https://www.sliderrevolution.com/wp-content/uploads/2020/02/srlogo.png', user: @user)
+    @group = Group.create(name: 'Food', icon: 'https://www.sliderrevolution.com/wp-content/uploads/2020/02/srlogo.png',
+                          user: @user)
   end
 
   describe 'GET /index' do
@@ -56,7 +57,7 @@ RSpec.describe '/groups', type: :request do
     end
   end
 
-  
+
   describe 'DELETE /destroy' do
     it 'destroys the requested group' do
       expect do
