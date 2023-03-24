@@ -57,7 +57,6 @@ RSpec.describe '/groups', type: :request do
     end
   end
 
-
   describe 'DELETE /destroy' do
     it 'destroys the requested group' do
       expect do
