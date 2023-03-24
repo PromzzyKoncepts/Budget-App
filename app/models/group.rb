@@ -7,11 +7,7 @@ class Group < ApplicationRecord
   def timelapse
     start_time = created_at
     end_time = Time.now
-
     TimeDifference.between(start_time, end_time).humanize
-    # TimeDifference.between(start_time, end_time).in_each_component
-    # start_time-end_time
-    # => "12 Months and 5 Days"
   end
 
   def self.created_by_current_user(current_user)

@@ -76,16 +76,18 @@
 
 <details>
 <summary>Screen Shots</summary>
-<img src="./screenshots/ss-1.png"/>
-<img src="./screenshots/ss-2.png"/>
-<img src="./screenshots/ss-3.png"/>
-<img src="./screenshots/ss-4.png"/>
-<img src="./screenshots/ss-5.png"/>
+<img src="./public/screenshots/Screenshot1.png"/>
+<img src="./public/screenshots/Screenshot2.png"/>
+<img src="./public/screenshots/Screenshot3.png"/>
+<img src="./public/screenshots/Screenshot4.png"/>
+<img src="./public/screenshots/Screenshot5.png"/>
+<img src="./public/screenshots/Screenshot6.png"/>
+<img src="./public/screenshots/Screenshot7.png"/>
 </details>
 
 <!-- Video -->
 ## :movie_camera: Video documentation
-[video](https://drive.google.com/file/d/1J3jDFveZznVjx5uZs9z9lN_yW7bPMWUU/view?usp=sharing)
+[video](https://drive.google.com/file/d/1HnzF7AcRO-MCpUm7cZHZi4LnBlpD5OLi/view?usp=sharing)
 
 <!-- LIVE DEMO -->
 
@@ -117,7 +119,7 @@ Clone this repository to your desired folder:
 commands:
 
 ```sh
-  git clone git@github.com:aamirkhan2478/budget-app.git
+  git clone https://github.com/PromzzyKoncepts/Budget-App.git
 ```
 
 ### Install
@@ -157,11 +159,13 @@ command:
 
 ## 👥 Authors <a name="authors"></a>
 
-> The collaborators of this project.
-👤 **Aamir Khan**
+## 👥 Authors <a name="authors"></a>
 
-- GitHub: [@aamirkhan2478](https://github.com/aamirkhan2478)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/aamir-kh)
+👤 **PROMISE OKECHUKWU**
+
+- GitHub: [@promzzykoncepts](https://github.com/PromzzyKoncepts)
+- Twitter: [@pr0mzzy](https://twitter.com/prOmzzy)
+- LinkedIn: [promiseokechukwu](https://linkedin.com/in/promiseokechukwu)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -180,7 +184,7 @@ command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/aamirkhan2478/my-blog/issues).
+Feel free to check the [issues page](./issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
