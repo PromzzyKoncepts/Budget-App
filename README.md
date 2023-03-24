@@ -1,95 +1,59 @@
 <a name="readme-top"></a>
 
-<!--
-HOW TO USE:
-This is an example of how you may give instructions on setting up your project locally.
-
-Modify this file to match your project and remove sections that don't apply.
-
-REQUIRED SECTIONS:
-- Table of Contents
-- About the Project
-  - Built With
-  - Live Demo
-- Getting Started
-- Authors
-- Future Features
-- Contributing
-- Show your support
-- Acknowledgements
-- License
-
-OPTIONAL SECTIONS:
-- FAQ
-
-After you're finished please remove all the comments and instructions!
--->
-
-<div align="center" font-size="30px">
-  <h3><b>Recipe app</b></h3>
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
-- [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
-- [📝 License](#license)
+- [📗 Table of Contents](#-table-of-contents)
+- [📖 Budget App ](#-budget-app-)
+  - [🛠 Built With ](#-built-with-)
+    - [Full Stack ](#full-stack-)
+    - [Key Features ](#key-features-)
+  - [:camera: Screen Shots](#camera-screen-shots)
+  - [:movie\_camera: Video documentation](#movie_camera-video-documentation)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+    - [Run tests](#run-tests)
+  - [👥 Authors ](#-authors-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [❓ FAQ ](#-faq-)
+  - [� Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Recipe App
+# 📖 Budget App <a name="about-project"></a>
 
-<a name="about-project"></a>
-
-**The Recipe app** keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe. Also, since sharing recipes is an important part of cooking the app allows you to make them public so anyone can access them.
-
+> This is a budget app where you can setup your different budgets and you can create different categories and also delete your own categories and also create new transactions and also delete your own transactions.
 ## 🛠 Built With <a name="built-with"></a>
 
-- Ruby
-- Ruby on Rails
-- VSCode
-- Rubocop
-- PostgreSQL
+### Full Stack <a name="tech-stack"></a>
 
-### Tech Stack <a name="tech-stack"></a>
-
+> I am using full stack technologies to build my project.
 <details>
-  <summary>Linters</summary>
+  <summary>Client</summary>
   <ul>
-  <li>StyleLint</li>
-  <li>Rubocop</li>
+    <li><a href="https://github.com/jeremyevans/erubi">ERB</a></li>
   </ul>
 </details>
 
 <details>
   <summary>Server</summary>
   <ul>
-  <li>Ruby</li>
+    <li><a href="https://rubyonrails.org/">Ruby On Rails</a></li>
   </ul>
 </details>
 
 <details>
 <summary>Database</summary>
   <ul>
-  <li>PostgreSQL</li>
+    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
   </ul>
 </details>
 
@@ -97,17 +61,39 @@ After you're finished please remove all the comments and instructions!
 
 ### Key Features <a name="key-features"></a>
 
-- **Add, delete, update, edit foods**
-- **Add, delete, update, edit recipes**
-- **Add, delete, update, edit shopping list**
+> Key features of the application.
+- **Login Functionality**
+- **Add new category**
+- **Delete your own categories**
+- **Add new transaction**
+- **Delete your own transactions**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Screen Shots -->
+
+## :camera: Screen Shots
+
+<details>
+<summary>Screen Shots</summary>
+<img src="./public/screenshots/Screenshot1.png"/>
+<img src="./public/screenshots/Screenshot2.png"/>
+<img src="./public/screenshots/Screenshot3.png"/>
+<img src="./public/screenshots/Screenshot4.png"/>
+<img src="./public/screenshots/Screenshot5.png"/>
+<img src="./public/screenshots/Screenshot6.png"/>
+<img src="./public/screenshots/Screenshot7.png"/>
+</details>
+
+<!-- Video -->
+## :movie_camera: Video documentation
+[video](https://drive.google.com/file/d/1HnzF7AcRO-MCpUm7cZHZi4LnBlpD5OLi/view?usp=sharing)
 
 <!-- LIVE DEMO -->
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](#)
+- [Live Demo Link](https://my-budget-app.herokuapp.com/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -115,23 +101,35 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-To get a local copy up and running, follow these steps.
+> To get a local copy up and running, follow these steps.
+### Prerequisites
+
+In order to run this project you need:
+
+command:
+
+```sh
+ gem install rails
+```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+commands:
+
 ```sh
-  cd PATH
-  git clone https://github.com/PromzzyKoncepts/Recipe-App
+  git clone https://github.com/PromzzyKoncepts/Budget-App.git
 ```
 
 ### Install
 
 Install this project with:
 
+command:
+
 ```sh
-  cd Recipe-app
+  cd budget-app
   gem install
 ```
 
@@ -139,21 +137,27 @@ Install this project with:
 
 To run the project, execute the following command:
 
+command:
+
 ```sh
-  rails server
+  rails s
 ```
 
 ### Run tests
 
 To run tests, run the following command:
 
+command:
+
 ```sh
-  rspec spec
+  rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
 
 ## 👥 Authors <a name="authors"></a>
 
@@ -169,7 +173,8 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Save recipes as pdf file**
+> Features of this project.
+- [ ] **Add time functionality**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -179,7 +184,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/PromzzyKoncepts/Recipe-App/issues).
+Feel free to check the [issues page](./issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,7 +192,21 @@ Feel free to check the [issues page](https://github.com/PromzzyKoncepts/Recipe-A
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project kindly give it a star ⭐️
+> If you like this project then you can show your support by giving to this project star.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Questions for new developers would ask when they decide to use your project.
+- **How I can run this project?**
+
+  - After cloning repository, run rails s. After that, you will see you will see the homepage of the project.
+
+- **How I can install rails**
+
+  - Install the rails by using `gem install rails`.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -195,10 +214,10 @@ If you like this project kindly give it a star ⭐️
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse for the project idea
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+Original design idea by [Gregoire Vella on Behance](https://www.behance.net/gregoirevella).
 
+<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 <!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
