@@ -5,6 +5,14 @@ body {
   background-color: #f3f3f3;
 }
 
+/* .session-header {
+  background-color: #3979c3;
+  height: 100px;
+  padding: 25px 30px;
+  display: flex;
+  justify-content: space-between;
+} */
+
 .session-container {
   display: grid;
   place-items: center;
