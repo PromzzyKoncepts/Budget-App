@@ -17,11 +17,8 @@ class OperationsController < ApplicationController
     @groups = Group.created_by_current_user(current_user)
   end
 
-  # GET /operations/1/edit
   def edit; end
 
-  # POST /operations or /operations.json
-  # @group = Group.operations.find(params[:id])
   def create
     params = operation_params
     @operation = Operation.new(name: params[:name], amount: params[:amount])
