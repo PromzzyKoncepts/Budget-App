@@ -1,0 +1,39 @@
+<p style="color: green"><%= notice %></p>
+<div class= "header">
+  <%= link_to root_path do %><%= image_tag "back.png", class:"back"%><%end%>
+  <h2>Categories</h2>
+  <%= button_to destroy_user_session_path, method: :delete, class:"off" do %> 
+    <%= image_tag "off.png", class:"off"%>
+  <%end%>
+</div>
+
+
+<div id="groups">
+  <%if @groups.any?%>
+    <% @groups.each do |group| %>
+      <%if can? :manage, group%>
+        <div class= "group">
+          <%= link_to group_operations_path(group), id: "group-container" do %>
+            <%= render group %>
+          <%end%>
+          <div class= "group-footers">
+            <div>
+              <small class= "timelapse"><%= group.timelapse%> ago</small>
+            </div>
+            <div class= "show-delete">
+              <%= link_to "View", group %>
+              <%= button_to "Delete", group, method: :delete, class: "delete" %>
+            </div>
+          </div>
+        </div>
+      <% end %>
+    <% end %>
+  <%else%>
+      <h3 style="text-align: center">Welcome! You have not added any Categories yet</h3>
+  <%end%>
+
+</div>
+
+<div class= "new-group">
+  <div class= "new-group-btn"><%= link_to "Add new category", new_group_path %></div>
+</div>

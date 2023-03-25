@@ -1,0 +1,17 @@
+<div id="group">
+  <div class= "image-icon">
+    <img src=<%= group.icon %> class= "group-img">
+    <h3>
+      <%= group.name %>
+    </h3>
+  </div>
+
+
+  <div class="category-total-amount">
+    <Span>
+        $<%= group.operations.inject(0) { |sum, e| sum += e.amount  }%> 
+    </Span>
+  </div>
+
+</div>
+

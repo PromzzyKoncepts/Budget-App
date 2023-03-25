@@ -1,0 +1,174 @@
+body {
+  font-family: 'inter', sans-serif;
+}
+
+#group-container {
+  width: 60%;
+  margin: auto;
+}
+
+.group {
+  width: 70%;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0 0 3px #5a5a5a;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
+#group {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-group a {
+  color: #fff;
+  text-decoration: none;
+}
+
+#groups a {
+  text-decoration: none;
+  color: #282828;
+}
+
+#groups {
+  margin-top: 40px;
+}
+
+.image-icon {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.group-img {
+  width: 90px;
+}
+
+.group-footers {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.show-delete {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.delete {
+  padding: 6px 10px;
+  background-color: brown;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  color: #fff;
+}
+
+.delete:active {
+  background-color: #60b524;
+}
+
+.new-group {
+  text-align: center;
+  padding: 10px 13px;
+  background-color: #60b524;
+  width: 30%;
+  margin: 20px auto;
+  cursor: pointer;
+}
+
+.new-group-btn {
+  border: 2px solid #fff;
+  width: 80%;
+  margin: auto;
+  padding: 10px 13px;
+}
+
+.new-group:active {
+  background-color: #315c12;
+}
+
+.new-group-wrapper {
+  background-color: #60b524;
+  width: 40%;
+  padding: 30px;
+  margin: 70px auto;
+  box-shadow: 0 0 5px #5a5a5a;
+  text-align: center;
+}
+
+.dropdown select {
+  width: 100%;
+  outline: 0;
+  padding: 8px 10px;
+  border-radius: 8px;
+  border: none;
+  background: #f4f4f4;
+  margin-bottom: 20px;
+}
+
+label {
+  text-align: left;
+}
+
+.group-name input {
+  width: 100%;
+  padding: 8px 10px;
+  margin-bottom: 20px;
+  border: none;
+  background-color: #f3f3f3;
+  outline: none;
+  border-radius: 8px;
+}
+
+.submit input {
+  color: #f4f4f4;
+  background-color: brown;
+  padding: 8px 11px;
+  border-radius: 8px;
+  border: none;
+}
+
+.submit input:active {
+  color: brown;
+  background-color: #f4f4f4;
+}
+
+.show-links {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .new-group {
+    text-align: center;
+    padding: 18px 16px;
+    background-color: #60b524;
+    width: 100%;
+    bottom: 0;
+    position: fixed;
+    cursor: pointer;
+    margin: 0 auto;
+  }
+
+  .new-group-wrapper {
+    width: 60%;
+  }
+
+  .group {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 3px #5a5a5a;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 4px;
+  }
+}

@@ -1,0 +1,14 @@
+<div class= "group">
+  <p style="color: green"><%= notice %></p>
+
+  <%= render @group %>
+
+  <div class= "show-links">
+    <%= link_to "Edit", edit_group_path(@group) %>
+
+    <%= button_to "Delete", @group, method: :delete %>
+    
+    <%= link_to "Go back", groups_path %>
+    
+  </div>
+</div>

@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Inter:wght@400;500;600;700;800&family=Poppins&family=Roboto:wght@700&display=swap');
+
+.homepage {
+  display: grid;
+  place-items: center;
+  font-family: 'inter', sans-serif;
+}
+
+.logo {
+  width: 50%;
+}
+
+.sign-in a {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.login,
+.signup {
+  background: #3979c3;
+  padding: 10px 20px;
+  border-radius: 8px;
+}
+
+.login:hover,
+.signup:hover {
+  background: #22466e;
+  transition: all 0.5s ease-in-out;
+}

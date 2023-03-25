@@ -1,0 +1,18 @@
+<div id="<%= dom_id operation %>">
+  <div id="group">
+    <p>
+      <%= operation.name %>
+    </p>
+
+    <p>
+      $<%= operation.amount %>
+    </p>
+  </div>
+  <div class= "group-footers">
+    <small class= "timelapse"><%= operation.timelapse%> ago</small>
+    <div>
+    <%= button_to "Delete", @operation, method: :delete, class: "delete" %>
+    </div>
+
+  </div>
+</div>
