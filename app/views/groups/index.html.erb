@@ -12,18 +12,20 @@
   <%if @groups.any?%>
     <% @groups.each do |group| %>
       <%if can? :manage, group%>
+        <div class= "group">
           <%= link_to group_operations_path(group), id: "group-container" do %>
             <%= render group %>
           <%end%>
           <div class= "group-footers">
             <div>
-              <small><%= group.timelapse%> ago</small>
+              <small class= "timelapse"><%= group.timelapse%> ago</small>
             </div>
             <div class= "show-delete">
               <%= link_to "View", group %>
               <%= button_to "Delete", group, method: :delete, class: "delete" %>
             </div>
           </div>
+        </div>
       <% end %>
     <% end %>
   <%else%>
@@ -33,5 +35,5 @@
 </div>
 
 <div class= "new-group">
-  <%= link_to "Add new category", new_group_path %>
+  <div class= "new-group-btn"><%= link_to "Add new category", new_group_path %></div>
 </div>

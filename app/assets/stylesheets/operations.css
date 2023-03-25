@@ -5,7 +5,7 @@
 
 .new-operation-wrapper {
   background-color: #60b524;
-  width: 35%;
+  width: 40%;
   padding: 30px;
   margin: 70px auto;
   box-shadow: 0 0 5px #5a5a5a;
@@ -41,4 +41,19 @@
 
 .create-btn {
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .new-operation-wrapper {
+    background-color: #60b524;
+    width: 75%;
+    padding: 30px;
+    margin: 70px auto;
+    box-shadow: 0 0 5px #5a5a5a;
+    text-align: center;
+  }
+
+  .timelapse {
+    font-size: 11px;
+  }
 }

@@ -7,16 +7,21 @@ body {
   margin: auto;
 }
 
+.group {
+  width: 70%;
+  margin: auto;
+  background-color: #fff;
+  padding: 25px;
+  box-shadow: 0 0 3px #5a5a5a;
+  margin-bottom: 30px;
+  margin-top: 15px;
+  border-radius: 4px;
+}
+
 #group {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: auto;
-  margin-top: 40px;
-  width: 60%;
-  border: 1px solid;
-  padding: 20px;
-  border-radius: 8px 8px 0 0;
 }
 
 .new-group a {
@@ -29,6 +34,10 @@ body {
   color: #282828;
 }
 
+#groups {
+  margin-top: 40px;
+}
+
 .image-icon {
   display: flex;
   align-items: center;
@@ -36,25 +45,19 @@ body {
 }
 
 .group-img {
-  width: 70px;
+  width: 90px;
 }
 
 .group-footers {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 5px;
-  width: 60%;
-  margin: auto;
-  border: 1px solid;
-  border-radius: 0 0 8px 8px;
 }
 
 .show-delete {
   display: flex;
   align-items: center;
-  gap: 20px;
-  padding-right: 15px;
+  gap: 10px;
 }
 
 .delete {
@@ -74,10 +77,16 @@ body {
   text-align: center;
   padding: 10px 13px;
   background-color: #60b524;
-  width: 15%;
+  width: 30%;
   margin: 20px auto;
-  border-radius: 6px;
   cursor: pointer;
+}
+
+.new-group-btn {
+  border: 2px solid #fff;
+  width: 80%;
+  margin: auto;
+  padding: 10px 13px;
 }
 
 .new-group:active {
@@ -128,4 +137,27 @@ label {
 .submit input:active {
   color: brown;
   background-color: #f4f4f4;
+}
+
+.show-links {
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .new-group {
+    text-align: center;
+    padding: 18px 16px;
+    background-color: #60b524;
+    width: 100%;
+    /* margin: 20px auto; */
+    bottom: 0;
+    position: fixed;
+    cursor: pointer;
+  }
+
+  .new-group-wrapper {
+    width: 60%;
+  }
 }
