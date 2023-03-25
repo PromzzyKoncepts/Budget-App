@@ -11,7 +11,7 @@ class Ability
     can :manage, Operation, author_id: user.id
 
     return unless user.admin?
-
+    
     can :manage, :all
   end
 end

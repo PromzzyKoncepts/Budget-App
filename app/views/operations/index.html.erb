@@ -17,15 +17,18 @@
   </div>
 
   <div id="operations">
-    <% if @operations.any? %>
-      <% @operations.each do |operation| %>
-        <%= render operation %> 
+      <% if @operations.any? %>
+        <div class= "group">
+          <% @operations.each do |operation| %>
+            <%= render operation %> 
+          <% end %>
+        </div>
+      <% else %>
+        <h2 style="text-align: center">No Transactions found, Add a new operation.</h2>
       <% end %>
-    <% else %>
-      <h2 style="text-align: center">No Transactions found, Add a new operation.</h2>
-    <% end %>
   </div>
   <div class= "new-group">
-    <%= link_to "New operation", new_group_operation_path(@operations) %>
+    <div class= "new-group-btn"><%= link_to "New operation", new_group_operation_path(@operations) %>
+    </div>
   </div>
 </div>
