@@ -154,9 +154,21 @@ label {
     bottom: 0;
     position: fixed;
     cursor: pointer;
+    margin: 0 auto;
   }
 
   .new-group-wrapper {
     width: 60%;
+  }
+
+  .group {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 3px #5a5a5a;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    border-radius: 4px;
   }
 }
